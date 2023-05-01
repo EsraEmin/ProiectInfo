@@ -1,0 +1,157 @@
+<html>
+<body leftmargin=50>
+<style>
+body{ background-image:url('algoritmi.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;}
+</style>
+
+<font color="CCFFFF" size=6>
+<center><h1><u>ALGORITMI STUDIAȚI</u></h1></center>
+</font>
+
+<font color="CC6666" size=8>
+<ol type=1><b>
+
+
+<li>Colectivul clasei a X-a A este compus din n băieți și fete.Aceștia doresc să afle care este cel mai scund dintre ei.Dezvoltați un algoritm pentru a-i ajuta să afle care este cel mai mic(înălțimile se vor introduce în cm).
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:5 / 166,190,170,159,160<br>
+output:159<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit numărul de elevi care participă la comparație și înălțimile lor<br>
+<li>am introdus o variabilă minn cu valoarea 400(echivalentul a 4m ,deoarece niciun elev nu poate avea 4m)<br>
+<li>dupa am comparat fiecare înalțime cu minn ,iar dacă înaltimea este mai mică decât minn , minn ia valoarea înălțimii<br>
+<li>iar în final am afișat valoarea minn ,deoarece în aceasta se află înalțimea cea mai mică, care trebuie gasită
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb1.jpg" width="600" height="545"></center>
+</ul>
+<br>
+<br>
+
+
+
+
+<li><font color="CC6666" size=8>Elevii clasei a X-a A au primit ca temă , să facă cât mai multe probleme la info , să se afle care a fost maximul de probleme rezolvate de un elev , iar dacă au fost mai mulți cu un număr maxim de probleme , să se precizeze câte persoane au lucrat numărul maxim.
+</font>
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:6 / 10,12,13,11,12,13<br>
+output:13 , 2<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit numărul de elevi care participă la comparație și câte probleme au rezolvat fiecare<br>
+<li>am introdus o variabilă maxx cu valoarea 0(deoarece este numărul minim pe care puteau sa îl aibă) și o variabila nr cu valoarea 0(aceasta ne ajută să număram elevii care au rezolvat numărul maxim de probleme)<br>
+<li>am comparat numărul de probleme rezolvate de fiecare elev cu maxx , dacă numărul era mai mare decât maxx , atunci maxx ia valoarea numărului, astfel am aflat numărul maxim de probleme rezolvate
+<li>după care am parcurs din nou vectorul și am aflat câte elemente sunt egale cu maxx și le-am numărat , iar numărul obținut reprezintă elevii care au rezolvat același număr maxim de probleme 
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb2.jpg" width="1000" height="700"></center>
+</ul>
+<br>
+<br>
+
+
+
+
+<li><font color="CC6666" size=8>La o licitație participă mai multe persoane. Acestea ocupă toate scaunele din sală,însă fix înaintea pornirii ultimei licitații, o persoana din primul rând este nevoită să plece. Realizați un program care afișează plăcuțele persoanelor din primul rând,după ce a plecat acel om.
+</font>
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:8 , 3 / 9,77,22,69,82,90,18,19<br>
+output:9,77,69,82,90,18,19<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit numărul persoanelor de pe primul rand și poziția pe care se afla omul care a plecat , dupa care am citit numărul de pe placuțele acestora(înainte ca acel om să plece)
+<li>am început să parcurg vectorul de la poziția omului care a plecat și am schimbat poziția in vector acelor care au rămăs
+<li>după care am parcurs noul vector, care are o poziție în minus și am afișat conținutul fiecărei celule din vector
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb3.jpg" width="400" height="500"></center>
+</ul>
+<br>
+<br>
+
+
+
+
+
+<li><font color="CC6666" size=8>Pe o tablă sunt scrise mai multe numere , în ordine aleatorie , iar elevii trebuie să găsească elementul divizibil cu 3 , însă aceștia nu vor să împartă ei , așa că s-au gândit să apeleze la ajutor din partea voastră. Implementați un program care să-i ajute să găsescă elementul divizibil cu 3 din șir și afișați șirul final.
+</font>
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:10 / 10,21,19,23,25,88,91,22,34,50<br>
+output: 10,19,23,25,88,91,22,34,50<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit cate numere sunt pe tablă și care sunt acestea
+<li>am căutat care număr este divizibil cu 3 și în momentul în care l-am gasit am memorat pozitia lui in ”a” și am aplicat break pentru a opri căutarea
+<li>am citit vectorul de la poziția găsită pana la finalul vectorului și am mutat conțitutul celulelor
+<li>am citit vectorul cu o valoarea în minus și am afișat elementele
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb4.jpg" width="550" height="700"></center>
+</ul>
+<br>
+<br>
+
+
+
+
+<li><font color="CC6666" size=8>La ora de matematică , elevii au învățat despre modulul unui număr. Creați un algoritm care să facă diferența dintre numerele pozitive și cele negative, iar la cele negative să afișeze în stânga lor modulul acestora și afișați noul șir ce conține și modulul numerelor negative.
+</font>
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:6 / 11 ,-2 ,3 ,-4 ,5 ,6<br>
+output:11 ,2 ,-2 ,3 ,4 ,-4 ,5 ,6<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit numărul de elemente și elementele din șir
+<li>am parcurs vectorul și am identificat elementele negative ,iar la fiecare element negativ am adăugat în stânga modulul lor și am marit dimensiunea vectorului prin ”n++”
+<li>am citit vectorul și am afișat elementele
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb5.jpg" width="700" height="700"><center>
+</ul>
+<br>
+<br>
+
+
+
+
+<li><font color="CC6666" size=8>Pe o tablă sunt scrise în ordine crescătoare n numere consecutive , însa s-a produs o greșeală și a fost sărit un număr.Elaborați un algoritm care să găsească numărul și poziția acestui număr sărit și afișați șirul scris în mod corect.
+</font>
+
+<ul type=disc><font color="CCFFFF" size=8>
+<li><u>Exemplu:</u><br>
+input:6 / 1,2,3,5,6,7<br>
+output:1,2,3,4,5,6,7<br>
+<li><u>Explicații:</u>
+<ul type=circle><font color="CCFFFF" size=8>
+<li>am citit numărul de elemente din șir și elementele
+<li>deorece numerele sunt consecutive ,diferența lor este 1 ,am testat diferența dintre numerele consecutive, iar unde am găsit diferența diferita de 1 , am memorat poziția in ”a” și numarul care trebuia să fie acolo l-am aflat prin aplicarea mediei aritmetice ,după care am memorat numărul obținut in ”b”
+<li>am citit vectorul de la ultimul element al vectorului până la poziția găsită si am atribuit valoarea ”b” poziției v[a]
+<li>am citit vectorul final cu o poziție în plus și am afișat vectorul final
+</ul>
+<li><u>Algoritm:</u><br>
+<center><img src="pb6.jpg" width="700" height="700"></center>
+</ul>
+<br>
+<br>
+
+
+
+<p><center><b><a href="prima pagina.html"><font size=6 color="CC6666"><<<---PAGINA PRINCIPALA</font></a></b></center></p>
+</body>
+</html>
+
+
